@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-color: #0b1622;
+}
+
+.main-holder {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  max-width: 1040px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.main-holder-list {
+  display: flex;
+  justify-content: center;
+  background-color: #0b1622;
+}
+
+@media only screen and (max-width: 700px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+  }
+}

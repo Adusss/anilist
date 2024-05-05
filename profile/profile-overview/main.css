@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  background-color: #0b1622;
+}
+
+.main {
+  height: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #0b1622;
+  justify-content: center;
+  display: flex;
+}
+
+.main-holder {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  width: 1040px;
+  justify-content: space-between;
+  /* background-color: #0b1622; */
+}
+
+@media (max-width: 1010px) {
+  .main-holder {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    justify-content: normal;
+  }
+  .home-right {
+    max-width: 300px;
+  }
+}

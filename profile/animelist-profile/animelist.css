@@ -1,0 +1,152 @@
+/* ! animelist-box */
+
+.animelist-name {
+  color: #90aab5;
+  background-color: #0b1622;
+  font-size: 21px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 500;
+  padding: 22px;
+}
+
+.animelist-list {
+  background-color: #152232;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.list-head {
+  height: 57px;
+  background-color: #152232;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 8px;
+}
+
+.list-title,
+.list-score,
+.list-progress,
+.list-type {
+  color: #90aab5;
+  font-size: 15px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 500;
+}
+
+/* ! polaczyc to potem z  single  */
+.list-score,
+.list-progress,
+.list-type {
+  max-width: 115px;
+  width: 100%;
+  text-align: center;
+}
+
+.single-progress,
+.single-type,
+.single-score {
+  max-width: 115px;
+  text-align: center;
+  width: 100%;
+}
+.single-name,
+.single-progress,
+.single-type,
+.single-score {
+  color: #90aab5;
+  font-size: 15px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 500;
+}
+
+.list-title {
+  max-width: 413px;
+  width: 100%;
+}
+
+.single-anime {
+  height: 53px;
+  background-color: #152232;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.single-anime:hover {
+  background-color: #b368e6;
+  transition: 0.4s;
+}
+
+.single-name {
+  max-width: 413px;
+  width: 100%;
+}
+
+.single-img-box {
+  width: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+/* ! animelist-box */
+
+/* ! filter-box  */
+
+.filter-box {
+  background-color: #0b1622;
+  max-width: 180px;
+  width: 100%;
+  margin-right: 50px;
+}
+
+.filter-name {
+  color: #90aab5;
+  margin: 0px 0px 10px 0px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.filters {
+  color: #90aab5;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-number {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.filter-holder:hover .filter-number {
+  opacity: 1;
+}
+
+.animelist-holder {
+  flex-direction: column;
+  width: 1500px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+/* ! filter-box  */
