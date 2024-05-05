@@ -1,0 +1,88 @@
+/* ! profile-nav-box2 */
+
+.nav-button-box2 a {
+  padding: 18px 16px;
+  font-family: Overpass, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  text-decoration: none;
+  color: #70889c;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.nav-button-box2:hover a {
+  color: #b25dd1;
+}
+
+.profile-nav-box2 {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #151f2e;
+}
+
+.profile-nav-holder2 {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+}
+
+/* ! profile-nav-box2 */
+
+/* ! dropdown2 */
+.dropdown2 {
+  justify-content: center;
+  display: none;
+}
+
+.dropdown2 .drop-button2 {
+  border: none;
+  background-color: #0b1622;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.dropdown-holder2 {
+  display: none;
+  position: absolute;
+  background-color: #0b1622;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.dropdown-holder2 a {
+  justify-content: center;
+  display: flex;
+}
+
+.dropdown2:hover .dropdown-holder2 {
+  max-height: 100%;
+  transition: max-height 0.5s ease-in;
+}
+
+@media (max-width: 700px) {
+  .profile-nav-holder2 {
+    display: none;
+  }
+
+  .dropdown2 {
+    display: block;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: 16px;
+  color: #8db2db;
+  cursor: pointer;
+  display: flex;
+}
+
+/* ! dropdown2 */
