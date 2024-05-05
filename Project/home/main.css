@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color: #0b1622;
+}
+
+.main {
+  width: 1040px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.main-holder {
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+  background-color: #0b1622;
+}
+
+@media (max-width: 1010px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    justify-content: normal;
+  }
+  .home-left {
+    max-width: 300px;
+  }
+}

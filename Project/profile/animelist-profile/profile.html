@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/profile/animelist-profile/navbutton.css" />
+    <link rel="stylesheet" type="text/css" href="/profile/animelist-profile/main.css" />
+    <link rel="stylesheet" type="text/css" href="/profile/animelist-profile/animelist.css" />
+    <link rel="stylesheet" type="text/css" href="/profile/animelist-profile/filter.css" />
+    <link rel="stylesheet" type="text/css" href="/profile/animelist-profile/navtop.css" />
+    <link rel="stylesheet" type="text/css" href="/profile/animelist-profile/profile-bc.css" />
+    <link rel="stylesheet" type="text/css" href="/profile/animelist-profile/top-hid-settings-body.css" />
+    <link rel="stylesheet" type="text/css" href="/profile/animelist-profile/hid-settings-body.css" />
+    <link rel="stylesheet" type="text/css" href="/profile/animelist-profile/fotter.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script defer src="/profile/animelist-profile/script.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="hidden-div" id="hidden-settings">
+      <img class="top-hid-bc" src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/164212-yZcGovywtUm4.jpg" alt="background" />
+
+      <div class="top-hid-settings-body">
+        <div class="hid-sett-left">
+          <div class="hid-sett-img-box"><img class="hid-sett-img" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx164212-xjkAkp6SKaCZ.jpg" alt="background" /></div>
+          <div class="hid-sett-name">Girls Band Cry</div>
+        </div>
+        <div class="hid-sett-right">
+          <div class="hid-sett-heart"><span class="material-symbols-outlined">favorite</span></div>
+          <div class="hid-sett-button-save">Save</div>
+          <div id="123" onclick="toggleDiv()" class="hid-sett-cross"><span class="material-symbols-outlined">close</span></div>
+        </div>
+      </div>
+
+      <div class="hid-settings-body">
+        <div class="hid-settings-forms">
+          <div class="form-box">
+            <div class="form-status">Status</div>
+            <div class="form-status-div">
+              <div class="hid-option" onclick="toggleOptions()">
+                <div class="selected-option">Status</div>
+                <div class="options">
+                  <div class="option" onclick="selectOption('Watching')">Watching</div>
+                  <div class="option" onclick="selectOption('Plan to Watch')">Plan to Watch</div>
+                  <div class="option" onclick="selectOption('Completed')">Completed</div>
+                  <div class="option" onclick="selectOption('Rewatching')">Rewatching</div>
+                  <div class="option" onclick="selectOption('Paused')">Paused</div>
+                  <div class="option" onclick="selectOption('Dropped')">Dropped</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-box">
+            <div class="form-score">Score</div>
+            <div class="form-score-div"><input class="hid-score" type="number" min="0" max="10" /></div>
+          </div>
+
+          <div class="form-box">
+            <div class="form-progress">Episode Progress</div>
+            <div class="form-progress-div"><input class="hid-score" type="number" min="0" max="999999" /></div>
+          </div>
+
+          <div class="form-box">
+            <div class="form-start-date">Start Date</div>
+            <div class="form-start-div"><input class="hid-date" type="date" name="trip-start" value="000-00-00" min="2000-01-01" max="2030-00-00" /></div>
+          </div>
+
+          <div class="form-box">
+            <div class="form-finish-date">Finish Date</div>
+            <div class="form-finish-div"><input class="hid-date" type="date" name="trip-start" value="000-00-00" min="2000-01-01" max="2030-00-00" /></div>
+          </div>
+
+          <div class="form-box">
+            <div class="form-rewatches">Total Rewatches</div>
+            <div class="form-rewatches-div"><input class="hid-score" type="number" min="0" max="999999" /></div>
+          </div>
+
+          <div class="form-box-notes">
+            <div class="form-notes">Notes</div>
+            <textarea class="notes-class"></textarea>
+          </div>
+        </div>
+
+        <div class="hid-list-box">
+          <div class="hid-lists-holder">
+            <div class="custom-list">Custom list</div>
+            <div class="custom-lists">No custom anime lists</div>
+          </div>
+          <div class="button-delete">Delete</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-holder">
+      <div class="topnav">
+        <div class="logo-box">
+          <img class="logo-img" src="https://anilist.co/img/icons/icon.svg" alt="logo" />
+        </div>
+        <div class="holder-button">
+          <div class="topnav-button-box">
+            <a class="topnav-button" href="index.html">Home</a>
+          </div>
+          <div class="topnav-button-box">
+            <a class="topnav-button" href="/profile/profile-overview/profile-overview.html">Profile</a>
+          </div>
+          <div class="topnav-button-box">
+            <a class="topnav-button" href="/profile/animelist-profile/profile.html">Anime List</a>
+          </div>
+          <div class="topnav-button-box">
+            <a class="topnav-button" href="#home">Manga List</a>
+          </div>
+          <div class="topnav-button-box">
+            <a class="topnav-button" href="#home">Browse</a>
+          </div>
+          <div class="topnav-button-box">
+            <a class="topnav-button" href="#home">Forum</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="drop-button"><span class="material-symbols-outlined"> menu </span></button>
+          <div class="dropdown-holder">
+            <div class="topnav-button-box">
+              <a class="topnav-button" href="index.html">Home</a>
+            </div>
+            <div class="topnav-button-box">
+              <a class="topnav-button" href="/profile/profile-overview/profile-overview.html">Profile</a>
+            </div>
+            <div class="topnav-button-box">
+              <a class="topnav-button" href="/profile/animelist-profile/profile.html">Anime List</a>
+            </div>
+            <div class="topnav-button-box">
+              <a class="topnav-button" href="#home">Manga List</a>
+            </div>
+            <div class="topnav-button-box">
+              <a class="topnav-button" href="#home">Browse</a>
+            </div>
+            <div class="topnav-button-box">
+              <a class="topnav-button" href="#home">Forum</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-box">
+          <img class="user-img" src="https://s4.anilist.co/file/anilistcdn/user/avatar/large/b6292397-rZ6qqYS2pys4.png" alt="user img" />
+        </div>
+      </div>
+
+      <div class="profile-miniholder">
+        <div class="profile-bc-box"><img class="profile-bc-img" src="https://s4.anilist.co/file/anilistcdn/user/banner/b6292397-4Da7Sw2OxWos.jpg" alt="img" /></div>
+        <div class="profile-middel">
+          <div class="profile-box-img">
+            <img class="profile-img" src="https://s4.anilist.co/file/anilistcdn/user/avatar/large/b6292397-rZ6qqYS2pys4.png" alt="img" />
+          </div>
+          <div class="namebox">
+            <div class="profile-name">Adus</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-nav-box2">
+        <div class="profile-nav-holder2">
+          <div class="nav-button-box2">
+            <a class="nav-button2" href="/profile/profile-overview/profile-overview.html">Overview</a>
+          </div>
+          <div class="nav-button-box2">
+            <a class="nav-button2" href="/profile/animelist-profile/profile.html">Animelist</a>
+          </div>
+          <div class="nav-button-box2">
+            <a class="nav-button2" href="#home">Manga List</a>
+          </div>
+          <div class="nav-button-box2">
+            <a class="nav-button2" href="#home">Favorites</a>
+          </div>
+          <div class="nav-button-box2">
+            <a class="nav-button2" href="#home">Stats</a>
+          </div>
+          <div class="nav-button-box2">
+            <a class="nav-button2" href="#home">Social</a>
+          </div>
+          <div class="nav-button-box2">
+            <a class="nav-button2" href="#home">Reviews</a>
+          </div>
+          <div class="nav-button-box2">
+            <a class="nav-button2" href="#home">Submissions</a>
+          </div>
+        </div>
+
+        <div class="dropdown2">
+          <button class="drop-button2"><span class="material-symbols-outlined">menu</span></button>
+          <div class="dropdown-holder2">
+            <div class="nav-button-box2">
+              <a class="nav-button2" href="index.html">Home</a>
+            </div>
+            <div class="nav-button-box2">
+              <a class="nav-button2" href="/profile/profile-overview.html">Profile</a>
+            </div>
+            <div class="nav-button-box2">
+              <a class="nav-button2" href="/profile/animelist-profile/profile.html">Anime List</a>
+            </div>
+            <div class="nav-button-box2">
+              <a class="nav-button2" href="#home">Manga List</a>
+            </div>
+            <div class="nav-button-box2">
+              <a class="nav-button2" href="#home">Browse</a>
+            </div>
+            <div class="nav-button-box2">
+              <a class="nav-button2" href="#home">Forum</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-holder-list">
+        <div class="main">
+          <div class="filter-box">
+            <div class="filter-holder">
+              <div class="filter-name">Lists</div>
+              <div class="filters">
+                All
+                <div class="filter-number">0</div>
+              </div>
+              <div class="filters">
+                Watching
+                <div class="filter-number">0</div>
+              </div>
+              <div class="filters">
+                Comepleted
+                <div class="filter-number">0</div>
+              </div>
+              <div class="filters">
+                Paused
+                <div class="filter-number">0</div>
+              </div>
+              <div class="filters">
+                Dropped
+                <div class="filter-number">0</div>
+              </div>
+              <div class="filters">
+                Planning
+                <div class="filter-number">0</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="animelist-holder">
+            <div class="animelist-box">
+              <div class="animelist-name">Watching</div>
+              <div class="animelist-list">
+                <div class="list-head">
+                  <div class="list-title">Title</div>
+                  <div class="list-score">Score</div>
+                  <div class="list-progress">Progress</div>
+                  <div class="list-type">Type</div>
+                </div>
+                <div id="listanime" class="listanime"></div>
+              </div>
+            </div>
+            <div class="animelist-box">
+              <div class="animelist-name">Completed TV</div>
+              <div class="animelist-list">
+                <div class="list-head">
+                  <div class="list-title">Title</div>
+                  <div class="list-score">Score</div>
+                  <div class="list-progress">Progress</div>
+                  <div class="list-type">Type</div>
+                </div>
+                <!-- <div id="listanime" class="listanime"></div> -->
+              </div>
+            </div>
+            <div class="animelist-box">
+              <div class="animelist-name">Paused</div>
+              <div class="animelist-list">
+                <div class="list-head">
+                  <div class="list-title">Title</div>
+                  <div class="list-score">Score</div>
+                  <div class="list-progress">Progress</div>
+                  <div class="list-type">Type</div>
+                </div>
+                <!-- <div id="listanime" class="listanime"></div> -->
+              </div>
+            </div>
+            <div class="animelist-box">
+              <div class="animelist-name">Dropped</div>
+              <div class="animelist-list">
+                <div class="list-head">
+                  <div class="list-title">Title</div>
+                  <div class="list-score">Score</div>
+                  <div class="list-progress">Progress</div>
+                  <div class="list-type">Type</div>
+                </div>
+                <!-- <div id="listanime" class="listanime"></div> -->
+              </div>
+            </div>
+            <div class="animelist-box">
+              <div class="animelist-name">Planning</div>
+              <div class="animelist-list">
+                <div class="list-head">
+                  <div class="list-title">Title</div>
+                  <div class="list-score">Score</div>
+                  <div class="list-progress">Progress</div>
+                  <div class="list-type">Type</div>
+                </div>
+                <!-- <div id="listanime" class="listanime"></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="fotterholder">
+        <div class="fotter">
+          <div class="fotter-text">Logout</div>
+          <div class="fotter-text">Donate</div>
+          <div class="fotter-text">AniList.co</div>
+          <div class="fotter-text">AniChart.net</div>
+        </div>
+        <div class="fotter">
+          <div class="fotter-text">Apps</div>
+          <div class="fotter-text">Site Stats</div>
+          <div class="fotter-text">Recommendations</div>
+          <div class="fotter-text">API</div>
+        </div>
+        <div class="fotter">
+          <div class="fotter-text">Discord</div>
+          <div class="fotter-text">Twitter</div>
+          <div class="fotter-text">Facebook</div>
+          <div class="fotter-text">GitHub</div>
+        </div>
+        <div class="fotter">
+          <div class="fotter-text">Add Data</div>
+          <div class="fotter-text">Moderators</div>
+          <div class="fotter-text">Contact</div>
+          <div class="fotter-text">Terms & Privacy</div>
+          <div class="fotter-text">Site Map</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
